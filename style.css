@@ -1,0 +1,663 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+.top-area {
+    position: relative;
+    z-index: 9999;
+    background-color: black;
+    font-size: 17px;
+}
+
+.navbar{
+    letter-spacing: 2px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    
+}
+
+#navbar1{
+    overflow: hidden;
+    background-color: #333;
+}
+
+#navbar1 a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 5px;
+    text-decoration: none;
+  }
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+/* 
+#navbar1.navbar {
+    letter-spacing: 2px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+} */
+
+
+.btn{
+    z-index: 2;
+    position: relative;
+    width: 100px;
+    letter-spacing: 2px;
+    padding: 10px;
+}
+
+.btn-dl{
+    z-index: 2;
+    position: relative;
+    width: 100%;
+    letter-spacing: 2px;
+    padding: 10px; 
+}
+
+.sticky-top {
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Optional: To ensure the navbar stays on top of other content */
+}
+
+.welcome-hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: url(/assets/image/bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 890px;
+    
+}
+
+.welcome-hero:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    background: rgba(31, 30, 30, 0.6);
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* Added a z-index to place the overlay behind the text */
+}
+
+.intro-text h2 {
+    color: rgb(255, 255, 255);
+    margin-top: -80px;
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 1.5;
+    z-index: 2; /* Added a z-index to place the text above the overlay */
+    position: relative; /* Ensuring the text stays on top */
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+.intro-text p{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 30px 0 60px;
+    letter-spacing: 1px;
+
+}
+
+
+.intro-text h2:hover {
+    color: rgb(200, 200, 200); /* Change color on hover */
+    transform: scale(1.2); /* Zoom effect on hover */
+    transition: color 0.5s ease-in-out, transform 0.5s ease-in-out;
+    /* transform: translateY(-10px); */
+ /* Combined transition for color and transform */
+}
+
+/* about css */
+.about{
+    background-color: rgb(0, 0, 0);
+}
+.section-heading h2 {
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #e5ebf2;
+    margin-top: 50px;
+    letter-spacing: 5px;
+}
+
+.info-about{
+    margin-top: 10%;
+    background-color: rgba(29, 27, 27, 0.952);
+    margin-bottom: 50px;
+    border-radius: 20px;
+}
+
+.info-about h3 {
+    font-size:18px;
+    color: #cacdda;
+    text-transform: initial;
+    line-height: 1.8;
+}
+.info-about p {
+    font-size: 16px;
+    color: #777a86;
+    padding: 30px 0 40px;
+    border-bottom: 1px solid #999fb3;
+}
+
+
+.info-about-img{
+    position: relative;
+    /* box-shadow: 10px 0px 30px rgba(69, 100, 202, 0.788); */
+    margin-top: 14%;
+    border-radius: 20px;
+}
+.info-about-img:before {
+    position:  absolute;
+    content: " ";
+    top: 0;
+    left:  0;
+    width: 100%;
+    height:  100%;
+    background: rgba(31,44,108,.3);
+    border-radius: 20px;
+}
+.info-about-img img {
+    max-width: 120%;
+    height: 450px;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.about-add-info h3 {
+    font-size:18px;
+    color: #cacdda;
+    text-transform: initial;
+    line-height: 1.8;
+}
+
+.about-add-info p {
+    font-size: 16px;
+    color: #777a86;
+    padding: 10px 0 40px;
+    border-bottom: 1px solid #999fb3;
+}
+
+.about-list-icon h3{
+    font-size:18px;
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    text-align: center;
+    color: #cacdda;
+}
+
+
+
+.about-list-icon{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-left: -50px;
+    
+}
+
+.about-list-icon ul li a {
+    cursor: pointer;
+    color: #fff;
+    display: inline-block;
+    border: 2px solid;
+    margin-left: 20px;
+    border-radius: 8px;
+    width: 30px;
+    height: 30px;
+    line-height: 28px;
+    text-align: center;
+    
+}
+
+.about-list-icon ul {
+    display: flex;
+    list-style-type: none;
+
+}
+
+/* css education */
+.education{
+    padding-bottom: 80px;
+}
+
+.section-heading-education h2 {
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #777c81;
+    margin-top: 50px;
+    letter-spacing: 5px;
+    width: 100%;
+
+}
+
+#elementary{
+    margin-top: 9%;
+}
+
+#elementary h3{
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+    margin-top: 50px;
+    letter-spacing: 2px;
+}
+
+
+#elementary h4{
+    font-size: 18px;
+    color: #4a4c4e;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-bottom: 10px;
+}
+
+#elementary p{
+    font-size: 12px;
+    color: #78797e;
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding-bottom: 30px;
+    /* border-bottom: 1px solid #777c81; */
+}
+
+/* #secondary{
+    background-color: rgb(230, 230, 230);
+    border-radius: 25px;
+    
+} */
+#secondary{
+    margin-top: 9%;
+}
+
+#secondary h3{
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+    margin-top: 50px;
+    letter-spacing: 2px;
+}
+
+
+#secondary h4{
+    font-size: 18px;
+    color: #4a4c4e;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-bottom: 10px;
+}
+
+#secondary p{
+    font-size: 12px;
+    color: #78797e;
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding-bottom: 30px;
+    /* border-bottom: 1px solid #777c81; */
+}
+
+/* #tertiary{
+    background-color: rgb(230, 230, 230);
+    border-radius: 25px;
+    max-width: 100%;
+} */
+
+#tertiary{
+    margin-top: 9%;
+}
+
+#tertiary h3{
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+    margin-top: 50px;
+    letter-spacing: 2px;
+}
+
+
+#tertiary h4{
+    font-size: 18px;
+    color: #4a4c4e;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-bottom: 10px;
+}
+
+#tertiary p{
+    font-size: 12px;
+    color: #78797e;
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding-bottom: 30px;
+    /* border-bottom: 1px solid #777c81; */
+}
+
+/* CSS for SKILLS */
+.section-heading-skills h2 {
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ffffff;
+    margin-top: 50px;
+    letter-spacing: 5px;
+    width: 100%;
+    padding-top: 50px;
+    color: white;
+}
+
+
+.header-skills{
+    background-color: #070707;
+}
+
+.single-progress-txt {
+    display: flex;
+}
+.single-progress-txt h3 {
+    width: 10%;
+    position: relative;
+    top: 6px;
+    left: 20px;
+}
+.barWrapper {
+    font-weight: 500;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.progress-box{
+    display: flex;
+}
+
+.progress-box h3{
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: white;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.progress-text{
+    font-size: 17px;
+    color: #999fb3;
+    margin-bottom: 10px;
+}
+
+
+.progress {
+    border-radius:3px;
+    overflow: visible;
+    background: #e6ecf3;
+    height:12px;
+    margin-top: 15px;
+    width: 85%;
+    margin-bottom: 37px;
+}
+.progress-bar {
+    border-radius: 3px;
+   -webkit-transition: width 1.5s ease-in-out;
+   -ms-transition: width 1.5s ease-in-out;
+   -moz-transition: width 1.5s ease-in-out;
+   -o-transition: width 1.5s ease-in-out;
+   transition: width 1.5s ease-in-out;
+} 
+
+/* CSS FOR WORK Experience */
+.section-heading-experience h2{
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #212224;
+    margin-top: 50px;
+    letter-spacing: 5px;
+}
+
+.vertical-line{
+    width: none;
+    border-left: 5px solid #b6b6b8;
+    height: 200px;
+    /* background-color: #858585; */
+    margin-left: 49.8%;
+    margin-right: auto;
+    /* translate: ; */
+}
+
+.circle{
+    background-color: #272626;
+    border-radius: 50%;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -25px;
+    z-index: 2;
+}
+
+.circle-1{
+    background-color: #272626;
+    border-radius: 50%;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -25px;
+    z-index: 2;
+}
+
+#exp{
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    padding: 10px;
+}
+
+#exp h3{
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+    margin-top: 6px;
+    letter-spacing: 2px;
+}
+
+#exp h4{
+    font-size: 18px;
+    color: #4a4c4e;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-bottom: 2px;
+}
+
+
+#exp p{
+    font-size: 12px;
+    color: #78797e;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+#exp span{
+    font-size: 12px;
+    color: #78797e;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+
+
+/* CSS FOR work shop */
+.section-heading-cert h2{
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #212224;
+    margin-top: 50px;
+    letter-spacing: 5px;
+}
+
+#header-workshop h3{
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+    
+}
+
+#header-workshop  h4{
+    font-size: 18px;
+    color: #4a4c4e;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-bottom: 10px;
+}
+
+#header-workshop  p{
+    font-size: 12px;
+    color: #78797e;
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding-bottom: 30px;
+    /* border-bottom: 1px solid #777c81; */
+}
+
+#header-workshop1 h3{
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+    
+}
+
+#header-workshop1  h4{
+    font-size: 18px;
+    color: #4a4c4e;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-bottom: 10px;
+}
+
+#header-workshop1  p{
+    font-size: 12px;
+    color: #78797e;
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding-bottom: 15px;
+    /* border-bottom: 1px solid #777c81; */
+}
+
+/* CSS FOR ACHIEVEMENT */
+.section-heading-achieve h3{
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #b2b3b6;
+    margin-top: 50px;
+    letter-spacing: 5px;
+    padding-top: 50px;
+
+}
+
+
+.table{
+    text-align: start;
+    letter-spacing: 2px ;
+    width: 75%;
+    padding-bottom: 50px;
+    margin-top: 10%;
+    margin: 10%;
+}
+
+#table{
+    padding-bottom: 50px;
+    justify-content: center;
+    display: flex;
+}
+
+
+/* footer */
+.footer{
+    height: 100px;
+}
+.footer1{
+    background-color: rgb(245, 239, 239);
+}
+
+.footer h3 {
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+.footer-list-icon {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-right: auto;
+    margin-top: -6%;
+}
+
+.footer-list-icon ul li a {
+    cursor: pointer;
+    color: #4b4949;
+    display: inline-block;
+    border: 2px solid;
+    margin-left: 10px;
+    border-radius: 8px;
+    width: 32px;
+    height: 30px;
+    line-height: 26px;
+    text-align: center;
+}
+
+.footer-list-icon ul {
+    display: flex;
+    list-style-type: none;
+}
+
+/* Media Query for mobile view */
+@media (max-width: 767px) {
+    .footer-list-icon {
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-start;
+        margin-top: -15%; 
+        margin-left: -3%;/* Align items to the start (left) */
+    }
+
+    .footer-list-icon ul {
+        margin-top: 10px; /* Add some space between the h3 and the icons */
+    }
+}
+

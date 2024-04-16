@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" integrity="sha512-vKMx8UnXk60zUwyUnUPM3HbQo8QfmNx7+ltw8Pm5zLusl1XIfwcxo8DbWCqMGKaWeNxWA8yrx5v3SaVpMvR3CA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&amp;subset=devanagari,latin-ext" rel="stylesheet">
+</head>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+  <header id="home" class="top-area">
+    <div class="header-area">
+      <nav id="navbar1" class="navbar navbar-expand-lg bg-dark navbar-dark sticky py-3" >
+        <div class="container">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="home">My Resume</a>
+            <button class="navbar-toggler" type="button"  data-bs-toggle="collapse" data-bs-target="#navbar-menu" aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+          <div class="collapse navbar-collapse" id="navbar-menu">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item px-2">
+                <a class="nav-link active" href="#home">Home</a>
+              </li>
+             <li class="nav-item px-2">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item px-2">
+                <a class="nav-link " href="#education">Education</a>
+              </li>
+              <li class="nav-item px-2">
+                <a class="nav-link" href="#skills">Skills</a>
+              </li>
+              <li class="nav-item px-2">
+                <a class="nav-link" href="#experience">Experience</a>
+              </li>
+              <li class="nav-item px-2">
+                <a class="nav-link" href="#achievements">Achievements</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <section class="welcome-hero">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 text-center">
+          <div class="intro-text">
+            <h2>Hi, I'am Francis Acuna</h2>
+            <p>Aspiring ui/ux designer and web developer</p>
+            <div class="d-flex justify-content-center align-items-center">
+              <div class="mt-5 m-1">
+                <a href="./resume/resume.txt" download class="btn-dl btn btn-outline-light btn-large">Download Resume</a>
+                <!-- <button id="resumebtn" type="button" class="btn-dl btn btn-outline-light btn-large"> 
+                  Download Resume
+                </button> -->
+              </div>
+              <div class="mt-5 m-1">
+                <button id="hirebtn" type="button" class="btn btn-success text-light btn-large"> 
+                  Hire Me
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="about" class="about">
+    <div class="container">
+      <div class="row">
+        <div class="section-heading text-center">
+          <h2 class="text-light">about me</h2>
+        </div>
+        <div class="col-sm-7">
+          <div class="info-about p-5">
+            <h3>
+              Hi! I am Francis Acuña an enthusiastic and aspiring UX designer and web developer on a mission to bring creativity and functionality to the digital realm. With a passion for crafting engaging user experiences and a fascination with the intricacies of web development, I'm on a journey to translate ideas into captivating online realities.
+            </h3>
+            <p>
+              As I embark on this exciting journey, I'm eager to collaborate, learn, and contribute to projects that push the boundaries of what's possible. Let's turn dreams into code, and ideas into immersive digital experiences. Join me in exploring the endless possibilities of UX and web development!
+            </p>
+          </div>
+        </div>
+        <div class="col-sm-5">
+          <div class="info-about-img">
+            <img src="./assets/image/profile.jpg" alt="profile">
+          </div>
+        </div>
+      </div>
+      <div class="row p-2">
+        <div class="col-sm-6">
+          <div class="about-add-info">
+            <h3>Full Name</h3>
+            <p>Francis Jarabejo Acuna</p>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="about-add-info">
+            <h3>phone</h3>
+            <p>0936-922-3915</p>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="about-add-info">
+            <h3>email</h3>
+            <p>francisacuna348@gmail.com</p>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="about-add-info">
+            <h3>Address</h3>
+            <p>Balud Del Norte Gubat, Sorsogon</p>
+          </div>
+        </div>
+        <div class="about-list-icon col-sm-12 d-flex mt-3 mb-3">
+          <ul>
+            <li>
+              <a href="https://web.facebook.com/francis.jarabejoacuna">
+                <i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i>
+             </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/titsoy_/">
+                  <i class="fa-brands fa-instagram fa-lg" style="color: #ffffff;"></i>
+              </a>
+          </li>
+            <li>
+              <a href="https://mail.google.com/mail/u/1/#inbox">
+                <i class="fa-brands fa-google" style="color: #ffffff;"></i>
+             </a>
+            </li>
+            <li>
+              <a href="https://github.com/FrancisAcuna1">
+                <i class="fa-brands fa-github" style="color: #ffffff;"></i>
+             </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="education" class="education d-flex align-content-center" style="height: 78%;">
+    <div class="container mt-2">
+      <div class="section-heading-education text-center">
+        <h2>Education</h2>
+      </div>
+      <div class="row d-flex">
+          <!-- Box 1 -->
+          <div id="elementary" class="col-md-4 mb-4">
+            <div class="bg-light border border-3 rounded-5 p-3 text-center shadow">
+              <h3>Elementary</h3>
+              <h4>2009 - 2015</h4>
+              <p>Aguinaldo Elementary School <br> <span>Brgy, Balud Del Norte Gubat, Sorsogon</span></p>
+            </div>
+          </div>
+  
+          <!-- Box 2 -->
+          <div id="secondary"  class="col-md-4 mb-4">
+            <div class="bg-light border border-3 rounded-5 p-3 text-center shadow">
+              <h3>Secondary</h3>
+              <h4>2015 - 2021</h4>
+              <p>Gubat National High School <br> <span>Brgy, Paradijon Gubat, Sorsogon</span></p>
+            </div>
+          </div>
+  
+          <!-- Box 3 -->
+          <div id="tertiary" class="col-md-4 mb-4">
+            <div class="bg-light border border-3 rounded-5 p-3 text-center shadow">
+              <h3>Tertiary</h3>
+              <h4>2021-2025</h4>
+              <p>The Lewis College <br> <span>Magsaysay st. Brgy, Cogon, Sorsogon</span></p>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="header-skills">
+    <div class="container">
+      <div class="section-heading-skills text-center">
+        <h2>Skills</h2>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 mb-5 mt-5">
+          <div class="barWrapper">
+            <h3 class="progress-text">HTML</h3>
+            <div class="progress-box">
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:86%">
+                </div>
+              </div>
+              <h3>86%</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 mb-5 mt-5">
+          <div class="barWrapper">
+            <h3 class="progress-text">CSS</h3>
+            <div class="progress-box">
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:79%">
+                </div>
+              </div>
+              <h3>79%</h3>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+
+      <div class="row">
+        <div class="col-sm-6 mb-5">
+          <div class="barWrapper">
+            <h3 class="progress-text">JavaScript</h3>
+            <div class="progress-box">
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:63%">
+                </div>
+              </div>
+              <h3>63%</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 mb-5">
+          <div class="barWrapper">
+            <h3 class="progress-text">PHP</h3>
+            <div class="progress-box">
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:90%">
+                </div>
+              </div>
+              <h3>90%</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 mb-5">
+          <div class="barWrapper">
+            <h3 class="progress-text">Python</h3>
+            <div class="progress-box">
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:52%">
+                </div>
+              </div>
+              <h3>52%</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 mb-5">
+          <div class="barWrapper">
+            <h3 class="progress-text">VB.Net</h3>
+            <div class="progress-box">
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:39%">
+                </div>
+              </div>
+              <h3>39%</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 mb-5">
+          <div class="barWrapper">
+            <h3 class="progress-text">Adobe Premiere</h3>
+            <div class="progress-box">
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:30%">
+                </div>
+              </div>
+              <h3>30%</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" class="bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="section-heading-experience text-center">
+          <h2 class="text-dark">Work Experience</h2>
+        </div>
+        <div class="col-sm-12 p-2">
+          <div id="exp" class="mt-5 border border-2">
+            <h3>UX/UI Designer</h3>
+            <h4>Tech-Merch</h4>
+            <p>2021-2022</p>
+            <p>Makati City</p>
+            <span>
+              As a UI/UX Designer at Tech-Merch, I focused on making <span>websites and apps easy to use and visually appealing.</span>I <span>worked with different teams to create designs that</span><span>look <span>good and work well.</span></span> 
+            </span>
+          </div>
+        </div>
+        <div class="circle-1 p-3"></div>
+        <div class="vertical-line"></div>
+        <div class="circle p-3"></div>
+        <div class="col-sm-12 p-2 mb-5 pb-4">
+          <div id="exp" class="border border-2">
+            <h3>Video Editor</h3>
+            <h4>Freelancing</h4>
+            <p>2022</p>
+            <p>Online Plaform</p>
+            <span>
+             As a Freelance video editor, I focused on making <span>videos easy to watch and visually appealing.</span> I <span>edited also animation effects using Adobe Effects and Premiere Pro</span>
+            </span>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="container">
+      <div class="section-heading-cert text-center">
+        <h2 class="text-dark">Work Shop/Seminars</h2>
+      </div>
+      <div class="row p-5">
+        <div class="col-sm-12 col-md-4 mt-5">
+          <div id="header-workshop" class=" border border-2 rounded-3 p-2 text-center ">
+            <i class="fa-solid fa-camera-retro fa-2xl mt-5" style="color: #0c0d0d;"></i>
+            <h3>Basic Photography Workshop</h3>
+            <h4>March 3 to 5, 2021</h4>
+            <p>Online Workshop</p>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4 mt-5">
+          <div id="header-workshop1" class=" border border-2 rounded-3 p-3 text-center ">
+            <i class="fa-solid fa-coins fa-2xl mt-4" style="color: #0c0d0d;"></i>
+            <h3>Social & Financial Education Learning Session Webinar</h3>
+            <h4>June 25 to 26, 2021</h4>
+            <p>Online Webinar</p>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4 mt-5">
+          <div id="header-workshop" class=" border border-2 rounded-3 p-2 text-center ">
+            <i class="fa-solid fa-microchip fa-2xl mt-5" style="color: #161718;"></i>
+            <h3>Bicol IT Student Congress <span>(BITSCON)</span> 2023</h3>
+            <h4>Febuary 22-23 2023</h4>
+            <p>Sorsogon State University</p>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4 mt-5">
+          <div id="header-workshop" class=" border border-2 rounded-3 p-3 text-center ">
+            <i class="fa-solid fa-piggy-bank fa-2xl mt-5" style="color: #161718;"></i>
+            <h3>Aflaton Seminars</h3>
+            <h4>May 22-23 2021</h4>
+            <p>Gsac Gubat, Sorsogon</p>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4 mt-5">
+          <div id="header-workshop" class=" border border-2 rounded-3 p-1 text-center ">
+            <i class="fa-solid fa-venus-mars fa-2xl mt-5" style="color: #0b0c0e;"></i>
+            <h3>Gender and Development Seminar</h3>
+            <h4>March 12, 2022</h4>
+            <p>Nana's Place Gubat Sorsogon</p>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4 mt-5">
+          <div id="header-workshop" class=" border border-2 rounded-3 p-1 text-center ">
+            <i class="fa-regular fa-comments fa-2xl mt-5" style="color: #1b1c1d;"></i>
+            <h3>How to Become a Tech Public Speaker</h3>
+            <h4>March 24, 2024</h4>
+            <p>Online Webinar</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="achievements" class="achievements bg-dark">
+    <div class="container">
+      <div class="section-heading-achieve text-center">
+        <h3 class="text-light">Achievements</h3> 
+      </div>
+      <div class="row">
+        <div id="table" class="col-sm-12">
+          <table class="table table-sm table-dark">
+              <thead>
+                <tr>
+                  <th class="p-3">Grade/Year</th>
+                  <th class="p-3">Achievements</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>3rd Year College</td>
+                  <td>3rd place in LAN CABLING</td>
+                </tr>
+                <tr>
+                  <td>
+                    2nd Year College
+                  </td>
+                  <td>
+                    Deans Lister - Frist Semester <br>
+                    Deans Lister - Second Semester
+                  </td>
+                </tr>
+                <tr>
+                  <td>1st Year College</td>
+                  <td>
+                    Deans Lister - Frist Semester <br>
+                    Deans Lister - Second Semester
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    Grade 12
+                  </td>
+                  <td>
+                    With Honors
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    Grade 11
+                  </td>
+                  <td>
+                    Champion Regional DLC Competition <br>
+                    1st runner-up Provencial DLC Competition
+                  </td>
+                </tr>
+              </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="footer1">
+    <div class="container">
+        <div class="row justify-content-between align-items-center">
+            <hr class="mt-5">
+            <div class="col-md-6">
+                <div class="footer mt-5">
+                    <h3>Francis Acuna.</h3>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="footer-list-icon d-flex justify-content-end">
+                    <ul class="list-unstyled d-flex">
+                        <li>
+                            <a href="https://web.facebook.com/francis.jarabejoacuna">
+                                <i class="fa-brands fa-facebook-f" style="color: #242020;"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/titsoy_/">
+                                <i class="fa-brands fa-instagram fa-lg" style="color: #242020;"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://mail.google.com/mail/u/1/#inbox">
+                                <i class="fa-brands fa-google" style="color: #242020;"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/FrancisAcuna1">
+                                <i class="fa-brands fa-github fa-lg" style="color: #242020;"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+  
+
+
+</body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"
+  integrity="sha512-VEd+nq25CkR676O+pLBnDW09R7VQX9Mdiij052gVCp5yVH3jGtH70Ho/UUv4mJDsEdTvqRCFZg0NKGiojGnUCw==" crossorigin="anonymous"referrerpolicy="no-referrer"></script>
+  <script src="nav.js"></script>
+</html>

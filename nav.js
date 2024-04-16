@@ -10,7 +10,7 @@ window.onscroll = function (event) {
 
     var toastbutton = document.getElementById('hirebtn');
     toastbutton.addEventListener('click', function(){
-      toastr.success('Your Request Successfully Send!', 'Success', {
+      toastr.success('Your Request Successfully Sent!', 'Success', {
         progressBar: true,
         textcolor: 'black',
         position: 'relative',
